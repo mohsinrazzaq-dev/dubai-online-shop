@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Dubai Online Shop — premium abayas, modest fashion and accessories with fast WhatsApp ordering across UAE.">
+  <title>Dubai Online Shop | Premium Abayas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="announcement">
+    <span>🚚 Free Delivery in UAE</span><span>✦ Original & Premium Quality</span><span>💬 Easy WhatsApp
+      Ordering</span><span>📍 Dubai, UAE</span>
+  </div>
+
+  <header class="header" id="header">
+    <a class="brand" href="#home" aria-label="Dubai Online Shop home">
+      <span class="brand-mark">D</span>
+      <span><strong>DUBAI</strong><small>online shop</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#shop">All Abayas</a>
+      <a href="#new">New Arrivals</a>
+      <a href="#collections">Collections</a>
+      <a href="#shop">Accessories</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button aria-label="Search" onclick="focusSearch()">⌕</button>
+      <button aria-label="Wishlist" onclick="showToast('Wishlist added soon')">♡</button>
+      <button aria-label="Cart" onclick="openCart()">🛍 <b id="cartCount">0</b></button>
+      <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-full" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">DUBAI ONLINE SHOP</p>
+        <h1>Modest Fashion.<br><em>Modern You.</em></h1>
+        <p class="hero-text">Premium abayas designed for every occasion — elegant details, beautiful fabrics and
+          effortless style.</p>
+        <div class="hero-features">
+          <span>◇ Elegant Designs</span><span>◌ Premium Fabric</span><span>♧ Fast UAE Delivery</span>
+        </div>
+        <a class="btn primary" href="#shop">Shop Now <span>→</span></a>
+      </div>
+      <div class="hero-image" aria-hidden="true"></div>
+    </section>
+
+    <section class="categories wrap" id="collections">
+      <button onclick="filterProducts('all')"><span>◉</span>All Abayas</button>
+      <button onclick="filterProducts('embroidered')"><span>✦</span>Embroidered</button>
+      <button onclick="filterProducts('classic')"><span>◌</span>Classic</button>
+      <button onclick="filterProducts('kimono')"><span>◇</span>Kimono Style</button>
+      <button onclick="filterProducts('party')"><span>✧</span>Party Wear</button>
+      <button onclick="filterProducts('accessories')"><span>⌁</span>Accessories</button>
+    </section>
+
+    <section class="products-section wrap" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>Shop Our Collection</h2>
+        </div>
+        <div class="search"><input id="searchInput" placeholder="Search abayas, styles..."
+            oninput="searchProducts(this.value)"><span>⌕</span></div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="whatsapp-strip">
+      <div class="wa-icon">◔</div>
+      <div><strong>Easy Ordering via WhatsApp</strong><span>Ask about size, color or availability — we're here to
+          help.</span></div>
+      <a class="btn dark"
+        href="https://wa.me/971509961378117?text=Hello%20Dubai%20Online%20Shop%2C%20I%20would%20like%20to%20order."
+        target="_blank">Chat on WhatsApp →</a>
+    </section>
+
+    <section class="editorial wrap" id="new">
+      <article class="editorial-card light">
+        <div>
+          <p class="eyebrow">TIMELESS ELEGANCE</p>
+          <h3>Premium<br>Quality</h3>
+          <p>Because you deserve the best.</p><a href="#shop">Explore Collection →</a>
+        </div>
+        <img src="assets/images/editorial-premium.jpg" alt="Premium fashion">
+      </article>
+      <article class="editorial-card dark-card">
+        <img src="assets/images/editorial-variety.jpg" alt="Elegant fabric">
+        <div>
+          <p class="eyebrow">YOUR STYLE, YOUR WAY</p>
+          <h3>Variety in<br>Every Style</h3>
+          <p>Colors · Sizes · Designs</p><a href="#shop">Shop Now →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="benefits wrap">
+      <div><b>◇</b><strong>7,000+ Products</strong><span>Wide Collection</span></div>
+      <div><b>⌁</b><strong>All Sizes Available</strong><span>From XS to 4XL</span></div>
+      <div><b>◌</b><strong>Multiple Colors</strong><span>To Match Your Style</span></div>
+      <div><b>♧</b><strong>Delivery Across UAE</strong><span>Fast & Reliable</span></div>
+      <div><b>✓</b><strong>Secure Shopping</strong><span>Trusted Service</span></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-inner">
+        <div>
+          <p class="eyebrow">ABOUT DUBAI ONLINE SHOP</p>
+          <h2>Modesty with<br><em>Confidence.</em></h2>
+        </div>
+        <p>Discover carefully selected abayas and modest fashion pieces for women who love timeless elegance with a
+          modern touch. Browse our collection and order directly through WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contact">
+      <div>
+        <p class="eyebrow">NEED HELP?</p>
+        <h2>Let's find your perfect style.</h2>
+        <p>For sizes, colors, availability and orders, contact us directly on WhatsApp.</p>
+      </div>
+      <a class="btn primary"
+        href="https://wa.me/971509961378117?text=Hello%20Dubai%20Online%20Shop%2C%20I%20need%20help%20choosing%20an%20abaya."
+        target="_blank">WhatsApp Us →</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main wrap">
+      <div class="footer-brand"><a class="brand" href="#home"><span
+            class="brand-mark">D</span><span><strong>DUBAI</strong><small>online shop</small></span></a>
+        <p>Modest fashion for the modern you.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4><a href="#shop">All Abayas</a><a href="#new">New Arrivals</a><a
+          href="#collections">Collections</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Customer Care</h4><a href="#contact">Size Guide</a><a href="#contact">Shipping & Delivery</a><a
+          href="#contact">Return Policy</a><a href="#contact">FAQ</a>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p>@dubai_onlineshop_1</p>
+        <div class="social">◎　♪　f　▶</div>
+      </div>
+    </div>
+    <div class="footer-bottom wrap"><span>© 2026 Dubai Online Shop. All rights
+        reserved.</span><span>Fashion　|　Modesty　|　Confidence</span></div>
+  </footer>
+
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-head">
+      <h3>Your Cart</h3><button onclick="closeCart()">×</button>
+    </div>
+    <div id="cartItems">
+      <p class="empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">AED 0</strong></div>
+    <a class="btn dark full" id="checkoutBtn" href="#" onclick="checkout(event)">Order via WhatsApp</a>
+  </div>
+  <div class="overlay" id="overlay" onclick="closeCart()"></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
