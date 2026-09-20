@@ -1,12 +1,12 @@
 const products=[
-{name:"Embroidered Abaya",price:299,cat:"embroidered",img:"assets/images/embroidered-abaya.svg",tag:"NEW"},
-{name:"Premium Mocha Abaya",price:279,cat:"classic",img:"assets/images/premium-mocha-abaya.svg",tag:"BEST SELLER"},
-{name:"Classic Black Abaya",price:249,cat:"classic",img:"assets/images/classic-black-abaya.svg",tag:""},
-{name:"Pearl Kimono Abaya",price:259,cat:"kimono",img:"assets/images/pearl-kimono-abaya.svg",tag:"NEW"},
-{name:"Royal Party Abaya",price:329,cat:"party",img:"assets/images/royal-party-abaya.svg",tag:""},
-{name:"Open Flow Abaya",price:269,cat:"classic",img:"assets/images/open-flow-abaya.svg",tag:""},
-{name:"Luxury Embroidery",price:349,cat:"embroidered",img:"assets/images/luxury-embroidery.svg",tag:"PREMIUM"},
-{name:"Signature Handbag",price:189,cat:"accessories",img:"assets/images/signature-handbag.svg",tag:""}
+{name:"Embroidered Abaya",price:299,cat:"embroidered",img:"assets/images/embroidered-abaya.jpg",tag:"NEW"},
+{name:"Premium Mocha Abaya",price:279,cat:"classic",img:"assets/images/premium-mocha-abaya.jpg",tag:"BEST SELLER"},
+{name:"Classic Black Abaya",price:249,cat:"classic",img:"assets/images/classic-black-abaya.jpg",tag:""},
+{name:"Pearl Kimono Abaya",price:259,cat:"kimono",img:"assets/images/pearl-kimono-abaya.jpg",tag:"NEW"},
+{name:"Royal Party Abaya",price:329,cat:"party",img:"assets/images/royal-party-abaya.jpg",tag:""},
+{name:"Open Flow Abaya",price:269,cat:"classic",img:"assets/images/open-flow-abaya.jpg",tag:""},
+{name:"Luxury Embroidery",price:349,cat:"embroidered",img:"assets/images/luxury-embroidery.jpg",tag:"PREMIUM"},
+{name:"Signature Handbag",price:189,cat:"accessories",img:"assets/images/signature-handbag.jpg",tag:""}
 ];
 let filtered=[...products], cart=[];
 function renderProducts(){
